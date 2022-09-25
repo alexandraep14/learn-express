@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Express</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+
+<body>
+<h1>Express</h1>
+<p>Welcome to Express</p>
+
+<h2>A list of your users: </h2>
+<ul id="userList">
+    <!--    Load data using the script-->
+</ul>
+
+    <div id = "listOfHobbies"></div>
+
+<h2>Add user to /real-users</h2>
+<form method="post" action="http://localhost:3000/real-users/add">
+    <label for="userName">The new User's name </label>
+    <input id="userName" name="userName" type="text">
+
+    <button>
+        Submit
+
+    </button>
+</form>
+
+<h2>Add hobby to /hobbies </h2>
+<form action="http://localhost:3000/hobbies/add" method="post">
+    <label for="hobby"> hobby </label>
+    <input type="text" name="hobby" id="hobby">
+    <button>
+        add hobbies to list
+    </button>
+
+</form>
+
+
+
+<script src="./javascripts/script.js" defer></script>
+
+</body>
+
+</html>
