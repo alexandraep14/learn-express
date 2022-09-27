@@ -35,6 +35,20 @@ window.onload = () => {
             }
         })
 
+    fetch('http://localhost:3000/music/all')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            let liOfmusic = document.getElementById('listMonsuusic')
+            for (const music of data) {
+                let musicParagraph = document.createElement('p')
+                // add text content to hobby
+                musicParagraph.textContent = `${music} :)`
+                // append hobby to div
+                liOfmusic.appendChild(musicParagraph);
+            }
+        })
+
 
     // TODO
     //  use fetch to fetch data from     real-users/all

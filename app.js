@@ -9,6 +9,8 @@ var usersRouter = require('./routes/users'); // from math import sqrt    in Pyth
 var realUsersRouter = require('./routes/real-users'); // from math import sqrt    in Python     from ./routes/users import userRouter
 var booksRouter = require('./routes/books');
 var hobbiesRouter = require('./routes/hobbies');
+var musicRouter = require('./routes/music');
+var songsRouter = require('./routes/songs');
 // from math import sqrt    in Python     from ./routes/users import userRouter
 // we can import other routers we created inside /routes/
 
@@ -30,6 +32,8 @@ app.use('/users',usersRouter);
 app.use('/real-users', realUsersRouter);
 app.use('/books', booksRouter);
 app.use('/hobbies', hobbiesRouter);
+app.use('/music', musicRouter);
+app.use('/songs', songsRouter);
 // we can bind new routes in here
 
 module.exports = app;

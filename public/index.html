@@ -1,4 +1,4 @@
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 
 <head>
     <title>Express</title>
@@ -31,13 +31,23 @@
 <form action="http://localhost:3000/hobbies/add" method="post">
     <label for="hobby"> hobby </label>
     <input type="text" name="hobby" id="hobby">
+
     <button>
         add hobbies to list
     </button>
 
 </form>
+    <div id = "musicLi"></div>
 
+<h2>Add a song to /music </h2>
+<form action="http://localhost:3000/music/add" method="post">
+    <label for = "music" > music </label>
+    <input type="text" name = "music" id = "music">
 
+    <button>
+        add a song to the music list
+        </button>
+</form>
 
 <script src="./javascripts/script.js" defer></script>
 

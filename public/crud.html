@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample CRUD</title>
+</head>
+<body>
+<h1>CRUD</h1>
+<pre>
+    CRUD
+    C = Create      sample url:     POST    /songs/add
+    R = Read        sample url:     GET     /songs/all
+                    sample url:     GET     /songs/one/:index
+    U = Update      sample url:     PUT     /songs/update/:index
+    D = Delete      sample url:     DELETE  /songs/delete/:index
+  </pre>
+<h2>Create</h2>
+
+<h2>Read</h2>
+
+<h4>Read All</h4>
+<ul id="getAllSongs">
+
+</ul>
+<h4>Read One</h4>
+<div id="readSong">
+
+</div>
+<form id="readOne" onsubmit="return false">
+    <label for="songIndex">Song index </label>
+    <input id="songIndex" name="songIndex" type="text">
+    <button type="button" onclick="onReadSong()">
+        Show User by Index
+    </button>
+
+</form>
+
+<h2>Update</h2>
+<form id="updateForm" action="#" onsubmit="return false;"> <!-- return false opreste reincarcarea paginii -->
+    <div>
+        <label for="index">Choose song by index</label>
+        <input id="index" name="index" type="text">
+    </div>
+    <div>
+        <label for="title">The updated title </label>
+        <input id="title" name="title" type="text">
+    </div>
+    <div>
+        <label for="genre">The updated genre </label>
+        <input id="genre" name="genre" type="text">
+    </div>
+    <button type="button" onclick="onUpdateSong()">
+        Update Song
+    </button>
+</form>
+
+<h2>Delete</h2>
+<form id="deleteForm" action="" onsubmit="return false">
+    <label for="deleteIndex">Index of Song to be deleted </label>
+    <input id="deleteIndex" name="deleteIndex" type="text">
+    <button onclick="onDeleteSong()">Delete</button>
+
+</form>
+
+<script src="crud.js"></script>
+</body>
+</html>
