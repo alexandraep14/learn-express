@@ -1,0 +1,3 @@
+[submodule "public/react-frontend"]
+	path = public/react-frontend
+	url = https://github.com/alexandraep14/learn-react
