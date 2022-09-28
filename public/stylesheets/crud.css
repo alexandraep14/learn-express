@@ -1,0 +1,14 @@
+#updateForm input {
+  font-weight: bold;
+}
+
+#updateForm input:valid,
+#updateForm textarea:valid {
+  border: 1px solid green;
+  color: green;
+}
+#updateForm input:invalid,
+#updateForm textarea:invalid {
+  border: 1px solid red;
+  color: red;
+}

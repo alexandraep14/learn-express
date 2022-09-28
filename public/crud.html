@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sample CRUD</title>
+    <link rel="stylesheet" href="stylesheets/crud.css">
 </head>
 <body>
 <h1>CRUD</h1>
@@ -39,15 +40,15 @@
 <form id="updateForm" action="#" onsubmit="return false;"> <!-- return false opreste reincarcarea paginii -->
     <div>
         <label for="index">Choose song by index</label>
-        <input id="index" name="index" type="text">
+        <input id="index" name="index" type="text" required>
     </div>
     <div>
         <label for="title">The updated title </label>
-        <input id="title" name="title" type="text">
+        <input id="title" name="title" type="text" required >
     </div>
     <div>
         <label for="genre">The updated genre </label>
-        <input id="genre" name="genre" type="text">
+        <input id="genre" name="genre" type="text" required minlength="3">
     </div>
     <button type="button" onclick="onUpdateSong()">
         Update Song
